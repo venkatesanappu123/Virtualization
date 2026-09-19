@@ -51,3 +51,70 @@ Launch a new EC2 instance using Amazon Linux 2 AMI. Select an appropriate instan
 ### Task 3: Configure Security Group
 
 Configure a security group to allow inbound access:
+
+* SSH (Port 22) from your IP address
+* HTTP (Port 80) from anywhere (0.0.0.0/0)
+
+This security group acts as a firewall for the instance.
+
+---
+
+### Task 4: Connect to EC2 Instance
+
+Connect to the running EC2 instance using SSH. Use the downloaded key pair and connect via terminal or PuTTY.
+
+For Amazon Linux:
+
+```
+ssh -i "keyname.pem" ec2-user@<Public-IP>
+```
+
+---
+
+### Task 5: Perform Basic Instance Operations
+
+Perform the following operations from the EC2 console:
+
+* Stop the instance
+* Start the instance
+* Reboot the instance
+
+Observe the state changes of the instance.
+
+---
+
+### Task 6: Monitor EC2 Instance
+
+Monitor the EC2 instance using the Monitoring tab. Observe metrics such as CPU utilization, network in/out, and instance status checks.
+
+---
+
+### Task 7: Terminate EC2 Instance
+
+Terminate the EC2 instance after completing the experiment to avoid unnecessary AWS charges.
+
+---
+
+
+
+## Output Screenshots (Attach 3)
+
+### Screenshot 1: EC2 Dashboard / Instance List
+
+<img width="926" height="951" alt="Screenshot 2026-08-08 094335" src="https://github.com/user-attachments/assets/41d51404-c4e3-4ded-9d74-43c91e3e782f" />
+
+
+
+### Screenshot 2: SSH Connection to Instance
+<img width="946" height="887" alt="Screenshot 2026-08-08 095951" src="https://github.com/user-attachments/assets/ae637cb5-b604-45ac-9038-aeefe1b1db04" />
+
+
+
+### Screenshot 3: Instance Monitoring / Status
+
+<img width="950" height="902" alt="Screenshot 2026-08-08 100402" src="https://github.com/user-attachments/assets/2f8c28a5-9ccf-4485-80ac-418b3b2a6b4e" />
+
+
+## Result 
+
+This experiment provided hands-on experience with Amazon EC2 by demonstrating how to launch, connect, manage, and monitor a virtual server in AWS. It helped in understanding the concept of Infrastructure as a Service (IaaS) and how compute resources can be provisioned and controlled on demand in the cloud.
